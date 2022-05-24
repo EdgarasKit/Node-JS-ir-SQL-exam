@@ -1,7 +1,6 @@
 import express from 'express';
 import 'dotenv/config';
 import cors from 'cors';
-import jwt from 'jsonwebtoken';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import usersRouter from './routes/api/users.js';
