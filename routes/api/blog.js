@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
     try {
-        const [data] = await con.query("SELECT*FROM blogai.blog");
+        const [data] = await con.query("SELECT*FROM atsiskaitymas.blog");
         res.send(data)
     } catch (err) {
         console.log("Klaida /api/blog");
