@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import usersRouter from './routes/api/users.js';
-import blogRouter from './routes/api/blog.js';
+import blogaiRouter from './routes/api/blog.js';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -29,6 +29,6 @@ app.use(cookieParser());
 
 // Routes
 app.use('/api/users', usersRouter);
-app.use('/api/blog', blogRouter);
+app.use('/api/blog', blogaiRouter);
 
 app.listen(PORT, ()=>console.log(`Serveris paleistas ant ${PORT} porto.`));
